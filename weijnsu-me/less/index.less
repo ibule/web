@@ -1,0 +1,351 @@
+@import 'variable.less';
+@import 'mxin.less';
+#header{
+    border-bottom: 1px solid @border-color;
+    .row{
+        >div{
+            border-right: 1px solid @border-color;
+            height: 40px;
+            line-height: 40px;
+            font-size: 12px;
+            a{
+               color: @a-color; 
+            }
+            &:last-child{
+                border: none;
+               .btn-link{
+                   color: @a-color;
+               }
+            }
+        }
+    }
+}
+#nav{
+    background-color: #fff;
+    margin-bottom: 0;
+    .navbar-toggle{
+       margin-top: 20px;
+    }
+   li{
+       &.active{
+           border-bottom: 2px solid @main-color;
+           background-color: #fff;
+       }
+       &:hover{
+           border-bottom: 2px solid @main-color;
+           background-color: #fff;
+       }
+      
+   }
+   a{
+    height: 80px;
+    line-height: 50px;
+    background-color: #fff;
+    // margin: 0 auto;
+    border: none;
+   .icon-icon{
+       color: @main-color;
+       font-size: 30px;
+   }   
+   .icon-logo{
+       color: black;
+       font-size: 30px;
+   }   
+  }
+}
+// 轮播图
+#section{
+    .large-image{
+        display: block;
+        width: 100%;
+        height: 410px;
+        background-position: center center;
+    }
+    .small-image {
+        display: block;
+       img{
+        width: 100%;
+       } 
+       
+    }
+}
+
+//特色服务区域
+#feature{
+    .row{
+        padding: 50px 0 20px;
+        margin-left: 90px;
+        >div{
+            color: @a-color;
+           margin-bottom: 30px;
+           a{
+               color: @a-color;
+               &:hover{
+                color: @main-color;
+                text-decoration: none; 
+            }
+           }
+        }
+        @media (max-width:768px) {
+            a{
+                width: 350px;
+                display: block;
+                margin: 0 auto 10px;            
+            }
+        }
+    }
+
+}
+
+//预约
+#booking{
+    border-top: 1px solid  @border-color;
+    border-bottom: 1px solid @border-color;
+    padding: 20px;
+}
+
+//产品区域
+#products{
+    padding: 40px 0;
+    background-color: #f0f0f0;
+    .container{
+        .ul-wapper{
+            overflow: auto;
+            .nav-tabs{     
+                width: 600px;
+                border-bottom: 1px solid @border-color;
+                    li.active{
+                        border-bottom: 3px solid @main-color;
+                        a{
+                            border-color: transparent;
+                            background-color: transparent;
+                        }
+                    }
+                    li{
+                       padding: 10px 0;
+                       margin-right: 15px;
+                       
+    
+                        a{
+                            &:hover{
+                                border-color: transparent;
+                            }
+                            font-size: 16px;
+                            color: @a-color;
+                            padding: 0;
+                            
+                        }
+                    }         
+                
+            }
+        }
+        
+       .tab-content{
+           .row{
+              .productBox{
+                  &.active{
+                      background-color: @main-color;
+                      color: white;
+                      position: relative;
+
+                      &::before{
+                        content: "\e915";
+                        font-family: "itcast";
+                        position:absolute;
+                        left: 0;
+                        top: -6px;
+                        font-size: 30px;
+
+                    }
+                  }
+                  background-color: #fff;
+                  display: flex;
+                  margin-top: 20px;
+                //   padding: 10px;
+                  .product-left{
+                      height: 160px;
+                      padding: 10px;
+                    flex: 1;
+
+                    h4{
+                        text-align: center;
+                    }
+                    .row{
+                        margin-right: 0;
+                        margin-left: 0;
+                       
+                        >div{
+                            margin-top: 10px;
+                            padding: 0;
+                            P{
+                                margin: 0;
+                            }
+                            &:nth-child(2n){
+                             text-align: right;
+                            }
+                        }
+                    }
+                   
+                  }
+                  .product-right{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;  
+                    width: 120px;
+                    border-left: 1px dashed @border-color;
+                    position: relative;
+                    .tooltips{
+                        width: 100%;
+                       position: absolute;
+                       top: 20px;
+                       text-align: center;
+                       .tooltip-inner{
+                           background-color: @main-color;
+                       }
+                        a{
+                            width: 20px;
+                            height: 20px;
+                           display: inline-block;
+                           text-align: center;
+                           text-decoration: none;
+                        }
+                        .tooltips1{
+                          color: #e92322;
+                          border: 1px solid  #e92322;  
+                          margin-right: 5px;
+                        }
+                        .tooltips2{
+                            color: #0f0;
+                            border: 1px solid #0f0;
+                        }
+                    }
+                    &::before,&::after{
+                        content: "";
+                        width: 16px;
+                        height: 16px;
+                        background-color: #f0f0f0;
+                        border-radius: 50%;
+                        position: absolute;
+                    }
+                    &::before{
+                        top: -8px;
+                        left: -8px;
+                    }
+                    &::after{
+                       left:-8px;
+                         bottom: -8px;
+                    }
+                   p{
+                       margin: 0;
+                       strong{
+                        font-size: 30px;
+                    }
+                   }
+                }
+              }
+                  
+               }
+           }
+       }
+    }
+
+    //新闻区域
+    #news{
+        padding: 40px 0;
+        .row{
+            >div{
+                h4{
+                    line-height: 60px;
+                    border-bottom: 1px dashed @border-color;
+                    text-align: center;
+                    position: relative;
+                    &::after{
+                        content:"";
+                        width: 10px;
+                        height: 10px;
+                        border: 1px solid #ccc;
+                        border-radius: 50%;
+                        position: absolute;
+                        bottom: -5px;
+                        right: -10px;
+
+                    }
+                }
+                .nav-tabs{
+                    border-bottom: none;
+                    li{
+                        margin-bottom: 20px;
+                        @media (max-width:992px) {
+                            width: 25%;
+                            text-align: center;
+                        }
+                        a{
+                            width: 60px;
+                            height: 60px;
+                            display: block;
+                            color: @a-color;
+                            text-decoration: none;
+                            text-align: center;
+                            margin: 0 auto;
+                           &:hover{
+                            background-color: @main-color;
+                            border-radius: 50%;
+                           }
+                            i{
+                                font-size: 30px;
+                                text-align: center;
+                            }
+                        }
+                        &.active{
+                           a{
+                            background-color: @main-color;
+                            border-radius: 50%;
+                               border: none;
+                           }
+                        }
+                    }
+                }
+                // 新闻内容
+                .tab-content{
+                        ul{
+                            li{
+                                list-style: none;
+                                line-height: 40px;
+                            }
+                        }
+                }
+            }
+        }
+    }
+
+    //合作伙伴
+    #partner{
+        padding: 40px 0;
+        h3{
+            text-align: center;
+        }
+        ul{
+            display: flex;
+            
+            li{
+                
+                list-style: none;
+                flex: 1;
+                a{
+                    text-decoration: none;
+                    &:hover{
+                       i{
+                        color: @main-color;
+                       } 
+                        
+                    }
+                    i{
+                        font-size: 50px;
+                        color: #333;
+
+                    }
+                }
+            }
+        }
+    }

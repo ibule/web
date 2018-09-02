@@ -1,0 +1,293 @@
+#header {
+  border-bottom: 1px solid #cccccc;
+}
+#header .row > div {
+  border-right: 1px solid #cccccc;
+  height: 40px;
+  line-height: 40px;
+  font-size: 12px;
+}
+#header .row > div a {
+  color: #666;
+}
+#header .row > div:last-child {
+  border: none;
+}
+#header .row > div:last-child .btn-link {
+  color: #666;
+}
+#nav {
+  background-color: #fff;
+  margin-bottom: 0;
+}
+#nav .navbar-toggle {
+  margin-top: 20px;
+}
+#nav li.active {
+  border-bottom: 2px solid #e92322;
+  background-color: #fff;
+}
+#nav li:hover {
+  border-bottom: 2px solid #e92322;
+  background-color: #fff;
+}
+#nav a {
+  height: 80px;
+  line-height: 50px;
+  background-color: #fff;
+  border: none;
+}
+#nav a .icon-icon {
+  color: #e92322;
+  font-size: 30px;
+}
+#nav a .icon-logo {
+  color: black;
+  font-size: 30px;
+}
+#section .large-image {
+  display: block;
+  width: 100%;
+  height: 410px;
+  background-position: center center;
+}
+#section .small-image {
+  display: block;
+}
+#section .small-image img {
+  width: 100%;
+}
+#feature .row {
+  padding: 50px 0 20px;
+  margin-left: 90px;
+}
+#feature .row > div {
+  color: #666;
+  margin-bottom: 30px;
+}
+#feature .row > div a {
+  color: #666;
+}
+#feature .row > div a:hover {
+  color: #e92322;
+  text-decoration: none;
+}
+@media (max-width: 768px) {
+  #feature .row a {
+    width: 350px;
+    display: block;
+    margin: 0 auto 10px;
+  }
+}
+#booking {
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+  padding: 20px;
+}
+#products {
+  padding: 40px 0;
+  background-color: #f0f0f0;
+}
+#products .container .ul-wapper {
+  overflow: auto;
+}
+#products .container .ul-wapper .nav-tabs {
+  width: 600px;
+  border-bottom: 1px solid #cccccc;
+}
+#products .container .ul-wapper .nav-tabs li.active {
+  border-bottom: 3px solid #e92322;
+}
+#products .container .ul-wapper .nav-tabs li.active a {
+  border-color: transparent;
+  background-color: transparent;
+}
+#products .container .ul-wapper .nav-tabs li {
+  padding: 10px 0;
+  margin-right: 15px;
+}
+#products .container .ul-wapper .nav-tabs li a {
+  font-size: 16px;
+  color: #666;
+  padding: 0;
+}
+#products .container .ul-wapper .nav-tabs li a:hover {
+  border-color: transparent;
+}
+#products .container .tab-content .row .productBox {
+  background-color: #fff;
+  display: flex;
+  margin-top: 20px;
+}
+#products .container .tab-content .row .productBox.active {
+  background-color: #e92322;
+  color: white;
+  position: relative;
+}
+#products .container .tab-content .row .productBox.active::before {
+  content: "\e915";
+  font-family: "itcast";
+  position: absolute;
+  left: 0;
+  top: -6px;
+  font-size: 30px;
+}
+#products .container .tab-content .row .productBox .product-left {
+  height: 160px;
+  padding: 10px;
+  flex: 1;
+}
+#products .container .tab-content .row .productBox .product-left h4 {
+  text-align: center;
+}
+#products .container .tab-content .row .productBox .product-left .row {
+  margin-right: 0;
+  margin-left: 0;
+}
+#products .container .tab-content .row .productBox .product-left .row > div {
+  margin-top: 10px;
+  padding: 0;
+}
+#products .container .tab-content .row .productBox .product-left .row > div P {
+  margin: 0;
+}
+#products .container .tab-content .row .productBox .product-left .row > div:nth-child(2n) {
+  text-align: right;
+}
+#products .container .tab-content .row .productBox .product-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  border-left: 1px dashed #cccccc;
+  position: relative;
+}
+#products .container .tab-content .row .productBox .product-right .tooltips {
+  width: 100%;
+  position: absolute;
+  top: 20px;
+  text-align: center;
+}
+#products .container .tab-content .row .productBox .product-right .tooltips .tooltip-inner {
+  background-color: #e92322;
+}
+#products .container .tab-content .row .productBox .product-right .tooltips a {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+}
+#products .container .tab-content .row .productBox .product-right .tooltips .tooltips1 {
+  color: #e92322;
+  border: 1px solid  #e92322;
+  margin-right: 5px;
+}
+#products .container .tab-content .row .productBox .product-right .tooltips .tooltips2 {
+  color: #0f0;
+  border: 1px solid #0f0;
+}
+#products .container .tab-content .row .productBox .product-right::before,
+#products .container .tab-content .row .productBox .product-right::after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-color: #f0f0f0;
+  border-radius: 50%;
+  position: absolute;
+}
+#products .container .tab-content .row .productBox .product-right::before {
+  top: -8px;
+  left: -8px;
+}
+#products .container .tab-content .row .productBox .product-right::after {
+  left: -8px;
+  bottom: -8px;
+}
+#products .container .tab-content .row .productBox .product-right p {
+  margin: 0;
+}
+#products .container .tab-content .row .productBox .product-right p strong {
+  font-size: 30px;
+}
+#news {
+  padding: 40px 0;
+}
+#news .row > div h4 {
+  line-height: 60px;
+  border-bottom: 1px dashed #cccccc;
+  text-align: center;
+  position: relative;
+}
+#news .row > div h4::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -5px;
+  right: -10px;
+}
+#news .row > div .nav-tabs {
+  border-bottom: none;
+}
+#news .row > div .nav-tabs li {
+  margin-bottom: 20px;
+}
+@media (max-width: 992px) {
+  #news .row > div .nav-tabs li {
+    width: 25%;
+    text-align: center;
+  }
+}
+#news .row > div .nav-tabs li a {
+  width: 60px;
+  height: 60px;
+  display: block;
+  color: #666;
+  text-decoration: none;
+  text-align: center;
+  margin: 0 auto;
+}
+#news .row > div .nav-tabs li a:hover {
+  background-color: #e92322;
+  border-radius: 50%;
+}
+#news .row > div .nav-tabs li a i {
+  font-size: 30px;
+  text-align: center;
+}
+#news .row > div .nav-tabs li.active a {
+  background-color: #e92322;
+  border-radius: 50%;
+  border: none;
+}
+#news .row > div .tab-content ul li {
+  list-style: none;
+  line-height: 40px;
+}
+#partner {
+  padding: 40px 0;
+}
+#partner h3 {
+  text-align: center;
+}
+#partner ul {
+  display: flex;
+}
+#partner ul li {
+  list-style: none;
+  flex: 1;
+}
+#partner ul li a {
+  text-decoration: none;
+}
+#partner ul li a:hover i {
+  color: #e92322;
+}
+#partner ul li a i {
+  font-size: 50px;
+  color: #333;
+}
